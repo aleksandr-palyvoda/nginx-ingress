@@ -1,0 +1,12 @@
+fullnameOverride: postgres
+postgresqlDatabase: mydb
+postgresqlUsername: dbuser
+postgresqlPassword: secret123456789
+
+service:
+  type: NodePort
+  port: 5432
+
+persistence:
+  enabled: true
+  size: 1Gi

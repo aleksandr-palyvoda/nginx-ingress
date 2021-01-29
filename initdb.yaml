@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: initdb
+spec:
+  template:
+    metadata:
+      name: initdb
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: post-install-job
+          image: postgres:latest
+          command:
+            - sh
+            - "-c"
+            - |
+              psql postgres://dbuser:secret123456789@postgres/mydb <<'EOF'
+                drop table users;
+              EOF
+
+  backoffLimit: 0
