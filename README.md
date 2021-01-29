@@ -14,4 +14,4 @@ kubectl apply -f app-deployment.yaml -f app-service.yaml -f app-ingress.yaml
 kubectl apply -f auth-deployment.yaml -f auth-service.yaml -f auth-ingress.yaml
 
 #### команда запуска тестов:
-newman run tests/aleksandr-palyvoda-tests.postman_collection.json
+newman run tests/auth-test.postman_collection.json
