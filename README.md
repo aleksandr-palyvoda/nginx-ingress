@@ -1,3 +1,5 @@
+![alt text](https://github.com/aleksandr-palyvoda/nginx-ingress/blob/master/user_service.png?raw=true)
+
 ### Запуск проекта
 #### namespace:
 myapp
